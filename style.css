@@ -1069,48 +1069,48 @@ button, input, select, textarea {
     z-index: 2;
 }
 
-.project-meta {
+.project-card .project-meta {
     display: flex;
     align-items: center;
     gap: 16px;
     font-size: 0.85rem;
-    color: #7a4a5e;
-    font-weight: 600;
+    color: #613548 !important;
+    font-weight: 700;
 }
 
-.project-meta span {
+.project-card .project-meta span {
     display: flex;
     align-items: center;
     gap: 7px;
 }
 
-.project-meta i {
-    color: #c96b84;
+.project-card .project-meta i {
+    color: #c96b84 !important;
     font-size: 0.9rem;
 }
 
-.project-title {
+.project-card .project-title {
     font-size: 1.4rem;
     font-weight: 800;
-    color: #2d1020;
+    color: #1e0915 !important;
     margin-bottom: 12px;
     line-height: 1.35;
     transition: color 0.3s ease;
 }
 
 .project-card:hover .project-title {
-    color: #c96b84;
+    color: #c96b84 !important;
 }
 
-.project-summary {
+.project-card .project-summary {
     font-size: 0.95rem;
-    color: #4a2c3a;
+    color: #3b1d2c !important;
     margin-bottom: 22px;
     line-height: 1.65;
     font-weight: 500;
 }
 
-.project-tags {
+.project-card .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -1118,13 +1118,13 @@ button, input, select, textarea {
     margin-bottom: 18px;
 }
 
-.tag {
-    padding: 5px 14px;
+.project-card .tag {
+    padding: 6px 14px;
     border-radius: var(--radius-full);
-    background: rgba(232, 130, 154, 0.16);
-    border: 1px solid rgba(201, 107, 132, 0.35);
+    background: #fce4ee !important;
+    border: 1px solid #e8829a !important;
     font-size: 0.775rem;
-    color: #c96b84;
+    color: #9e3150 !important;
     font-weight: 700;
     display: inline-flex;
     align-items: center;
@@ -1133,39 +1133,37 @@ button, input, select, textarea {
 }
 
 .project-card:hover .tag {
-    background: rgba(201, 107, 132, 0.25);
-    border-color: rgba(201, 107, 132, 0.5);
-    color: #a84761;
+    background: #f8cbdc !important;
+    border-color: #c96b84 !important;
+    color: #82223b !important;
 }
 
-.btn-figma-card {
+.project-card .btn-figma-card {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 9px;
     padding: 12px 20px;
     border-radius: var(--radius-full);
-    background: rgba(232, 130, 154, 0.12);
-    border: 1px solid rgba(201, 107, 132, 0.3);
-    color: #c96b84;
-    font-weight: 600;
+    background: var(--gradient-primary) !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-weight: 700;
     font-size: 0.9rem;
     text-decoration: none;
     transition: all 0.3s ease;
     width: 100%;
+    box-shadow: 0 4px 14px rgba(201, 107, 132, 0.35);
 }
 
-.btn-figma-card i.fa-figma {
-    color: #f24e1e;
+.project-card .btn-figma-card i.fa-figma {
+    color: #ffffff !important;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-.btn-figma-card:hover {
-    background: var(--gradient-primary);
-    border-color: transparent;
-    color: #ffffff;
-    box-shadow: 0 8px 24px rgba(212, 80, 96, 0.45);
+.project-card .btn-figma-card:hover {
+    box-shadow: 0 8px 24px rgba(212, 80, 96, 0.5);
     transform: translateY(-2px);
 }
 
