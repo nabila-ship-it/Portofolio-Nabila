@@ -1074,8 +1074,8 @@ button, input, select, textarea {
     align-items: center;
     gap: 16px;
     font-size: 0.85rem;
-    color: #94a3b8;
-    font-weight: 500;
+    color: #7a4a5e;
+    font-weight: 600;
 }
 
 .project-meta span {
@@ -1085,28 +1085,29 @@ button, input, select, textarea {
 }
 
 .project-meta i {
-    color: var(--primary-cyan);
+    color: #c96b84;
     font-size: 0.9rem;
 }
 
 .project-title {
     font-size: 1.4rem;
-    font-weight: 700;
-    color: #f8fafc;
+    font-weight: 800;
+    color: #2d1020;
     margin-bottom: 12px;
     line-height: 1.35;
     transition: color 0.3s ease;
 }
 
 .project-card:hover .project-title {
-    color: #ffa292;
+    color: #c96b84;
 }
 
 .project-summary {
     font-size: 0.95rem;
-    color: #cbd5e1;
+    color: #4a2c3a;
     margin-bottom: 22px;
     line-height: 1.65;
+    font-weight: 500;
 }
 
 .project-tags {
@@ -1120,11 +1121,11 @@ button, input, select, textarea {
 .tag {
     padding: 5px 14px;
     border-radius: var(--radius-full);
-    background: rgba(212, 80, 96, 0.12);
-    border: 1px solid rgba(242, 145, 145, 0.28);
+    background: rgba(232, 130, 154, 0.16);
+    border: 1px solid rgba(201, 107, 132, 0.35);
     font-size: 0.775rem;
-    color: #F7ADAD;
-    font-weight: 600;
+    color: #c96b84;
+    font-weight: 700;
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -1132,9 +1133,9 @@ button, input, select, textarea {
 }
 
 .project-card:hover .tag {
-    background: rgba(212, 80, 96, 0.2);
-    border-color: rgba(247, 173, 173, 0.5);
-    color: #ffffff;
+    background: rgba(201, 107, 132, 0.25);
+    border-color: rgba(201, 107, 132, 0.5);
+    color: #a84761;
 }
 
 .btn-figma-card {
