@@ -315,6 +315,28 @@ button, input, select, textarea {
     box-shadow: 0 8px 20px rgba(201, 107, 132, 0.2);
 }
 
+.btn-whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5) !important;
+}
+
+.btn-instagram {
+    background: linear-gradient(135deg, #E1306C, #FD1D1D, #F56040) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(225, 48, 108, 0.35);
+}
+
+.btn-instagram:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 28px rgba(225, 48, 108, 0.5) !important;
+}
+
 .btn-block {
     width: 100%;
 }
