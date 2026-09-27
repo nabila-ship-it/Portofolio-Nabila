@@ -581,11 +581,15 @@ button, input, select, textarea {
     align-items: center;
 }
 
-.avatar-card-wrapper {
+.triple-avatar-wrapper {
     position: relative;
     width: 100%;
-    max-width: 390px;
+    max-width: 520px;
+    height: 480px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .avatar-ambient-glow {
@@ -608,20 +612,93 @@ button, input, select, textarea {
 }
 
 .avatar-glass-card {
-    position: relative;
-    z-index: 1;
-    padding: 14px;
-    background: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.85);
     border: 1.5px solid rgba(232, 130, 154, 0.35);
     border-radius: var(--radius-xl);
     backdrop-filter: blur(20px);
-    box-shadow: 0 20px 50px -12px rgba(201, 107, 132, 0.3), 0 0 30px rgba(232, 130, 154, 0.2);
-    transition: var(--transition-normal);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 16px 40px -10px rgba(201, 107, 132, 0.25);
+    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
 }
 
-.avatar-glass-card:hover {
-    border-color: rgba(201, 107, 132, 0.55);
-    box-shadow: 0 28px 60px -12px rgba(201, 107, 132, 0.4), 0 0 45px rgba(232, 130, 154, 0.3);
+/* Main Center Photo Card */
+.avatar-glass-card.card-center {
+    width: 310px;
+    z-index: 3;
+    top: 10px;
+    box-shadow: 0 22px 55px -10px rgba(201, 107, 132, 0.38);
+}
+
+.avatar-glass-card.card-center .profile-img {
+    height: 390px;
+}
+
+.avatar-glass-card.card-center:hover {
+    transform: translateY(-10px) scale(1.03);
+    z-index: 10;
+    box-shadow: 0 30px 65px -10px rgba(201, 107, 132, 0.48);
+}
+
+/* Left Photo Card (Rotated -9deg) */
+.avatar-glass-card.card-left {
+    width: 235px;
+    z-index: 1;
+    left: -15px;
+    top: 40px;
+    transform: rotate(-9deg);
+}
+
+.avatar-glass-card.card-left .profile-img {
+    height: 310px;
+}
+
+.avatar-glass-card.card-left:hover {
+    transform: rotate(0deg) translateY(-12px) scale(1.06);
+    z-index: 10;
+    box-shadow: 0 28px 60px rgba(201, 107, 132, 0.45);
+    border-color: rgba(201, 107, 132, 0.6);
+}
+
+/* Right Photo Card (Rotated +9deg) */
+.avatar-glass-card.card-right {
+    width: 235px;
+    z-index: 2;
+    right: -15px;
+    top: 40px;
+    transform: rotate(9deg);
+}
+
+.avatar-glass-card.card-right .profile-img {
+    height: 310px;
+}
+
+.avatar-glass-card.card-right:hover {
+    transform: rotate(0deg) translateY(-12px) scale(1.06);
+    z-index: 10;
+    box-shadow: 0 28px 60px rgba(201, 107, 132, 0.45);
+    border-color: rgba(201, 107, 132, 0.6);
+}
+
+.sub-card-badge {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(232, 130, 154, 0.35);
+    padding: 5px 14px;
+    border-radius: var(--radius-full);
+    font-size: 0.775rem;
+    font-weight: 700;
+    color: #c96b84;
+    white-space: nowrap;
+    box-shadow: 0 6px 18px rgba(201, 107, 132, 0.22);
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .avatar-img-container {
@@ -645,7 +722,6 @@ button, input, select, textarea {
 
 .profile-img {
     width: 100%;
-    height: 440px;
     object-fit: contain;
     object-position: bottom center;
     position: relative;
@@ -1904,6 +1980,33 @@ textarea:focus {
 
     .stat-label {
         font-size: 0.775rem;
+    }
+
+    .triple-avatar-wrapper {
+        height: 400px;
+        max-width: 360px;
+    }
+    .avatar-glass-card.card-center {
+        width: 240px;
+    }
+    .avatar-glass-card.card-center .profile-img {
+        height: 310px;
+    }
+    .avatar-glass-card.card-left {
+        width: 175px;
+        left: -10px;
+        top: 25px;
+    }
+    .avatar-glass-card.card-left .profile-img {
+        height: 230px;
+    }
+    .avatar-glass-card.card-right {
+        width: 175px;
+        right: -10px;
+        top: 25px;
+    }
+    .avatar-glass-card.card-right .profile-img {
+        height: 230px;
     }
 
     .projects-grid {
