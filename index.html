@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabila | UI/UX & Product Designer Portfolio</title>
+    <meta name="description"
+        content="Portofolio Nabila - UI/UX Designer yang berfokus pada desain produk digital yang intuitif, estetis, dan berorientasi pada pengguna. Pengalaman dalam mobile app UI, web dashboard, dan design system.">
+    <meta name="keywords"
+        content="UI/UX Designer, Product Designer, Nabila Portfolio, Figma UI Design, Web UX Design, Portofolio Desainer">
+    <meta name="author" content="Nabila">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Ambient Glowing Orbs -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-text">Nabila<span class="logo-dot">.</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-menu">
+                <a href="#home" class="nav-item active" id="nav-link-home"><i class="fa-solid fa-house"></i> Beranda</a>
+                <a href="#about" class="nav-item" id="nav-link-about"><i class="fa-solid fa-user"></i> Tentang</a>
+                <a href="#projects" class="nav-item" id="nav-link-projects"><i class="fa-solid fa-layer-group"></i>
+                    Pengalaman UI/UX</a>
+                <a href="#education" class="nav-item" id="nav-link-education"><i class="fa-solid fa-graduation-cap"></i>
+                    Pendidikan</a>
+                <a href="#skills" class="nav-item" id="nav-link-skills"><i class="fa-solid fa-shapes"></i> Keahlian</a>
+                <a href="#contact" class="nav-item btn-contact-nav" id="nav-link-contact"><i
+                        class="fa-solid fa-paper-plane"></i> Kontak</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION (Halaman Awal & Data Diri Ringkas) -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <!-- <div class="badge-status" id="hero-badge">
+                        <span class="pulse-dot"></span> Available for UI/UX & Product Design Projects
+                    </div> -->
+                    <h1 class="hero-title" id="hero-title">
+                        Halo, Saya <span class="gradient-text">Nabila</span> 👋<br>
+                        Creating Intuitive & <span class="sparkle-text">Delightful</span> UI/UX Experiences
+                    </h1>
+                    <p class="hero-description" id="hero-desc">
+                        Saya adalah seorang <strong>UI/UX & Product Designer</strong> berdedikasi yang mengubah gagasan
+                        kompleks menjadi antarmuka digital yang bersih, modern, dan mudah digunakan. Berfokus pada riset
+                        pengguna, visual hi-fi, wireframing, dan prototipe interaktif.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-portfolio">
+                            <span>Jelajahi Portofolio</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Hubungi Saya</span>
+                        </a>
+                    </div>
+
+                    <!-- <div class="hero-stats" id="hero-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">15+</h3>
+                            <p class="stat-label">UI/UX Projects</p>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">98%</h3>
+                            <p class="stat-label">User Satisfaction</p>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">Sem 5</h3>
+                            <p class="stat-label">Web & UX Specialist</p>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-card-wrapper" id="hero-avatar-card">
+                        <div class="avatar-ambient-glow"></div>
+                        <div class="avatar-glass-card">
+                            <div class="avatar-img-container">
+                                <div class="avatar-backdrop-gradient"></div>
+                                <img src="assets/images/profile.png" alt="Nabila UI/UX Designer" class="profile-img"
+                                    id="hero-profile-image">
+                                <div class="avatar-bottom-fade"></div>
+                            </div>
+                            <div class="floating-badge badge-figma" id="badge-figma">
+                                <i class="fa-brands fa-figma"></i> Figma Master
+                            </div>
+                            <div class="floating-badge badge-ux" id="badge-ux">
+                                <i class="fa-solid fa-pen-nib"></i> User-Centered Design
+                            </div>
+                            <div class="floating-badge badge-code" id="badge-code">
+                                <i class="fa-solid fa-code"></i> HTML & CSS UI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION (Data Diri Lengkap & Filosofi Desain) -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title" id="about-subtitle"><i class="fa-solid fa-circle-user"></i> Mengenal Lebih
+                        Dekat</span>
+                    <h2 class="section-title" id="about-title">Data Diri & Filosofi Desain</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card" id="about-bio-card">
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-address-card"></i>
+                            <h3>Tentang Saya</h3>
+                        </div>
+                        <p class="about-text">
+                            Saya adalah mahasiswa <strong>Semester 5 dari program studi sistem informasi</strong> dengan
+                            minat mendalam pada disiplin <strong>User Interface (UI) dan User Experience (UX)
+                                Design</strong>. Bagi saya, desain antarmuka bukan sekadar estetika visual, melainkan
+                            jembatan komunikasi antara empati kebutuhan pengguna dan tujuan bisnis.
+                        </p>
+                        <p class="about-text">
+                            Dengan latar belakang pemahaman struktur web (HTML/CSS) serta penguasaan tools desain
+                            terdepan seperti <strong>Figma</strong>, saya mampu merancang
+                            arsitektur informasi yang terstruktur, wireframe yang adaptif, hingga prototipe hi-fi
+                            interaktif.
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-user-check"></i> Nama Lengkap:</span>
+                                <span class="info-value">Nabila</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-briefcase"></i> Peran Utama:</span>
+                                <span class="info-value">UI/UX Designer & Frontend UI Developer</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Lokasi:</span>
+                                <span class="info-value">Indonesia</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-bullseye"></i> Fokus Desain:</span>
+                                <span class="info-value">Mobile App Design, Design System.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-card" id="about-pillars-card">
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <h3>Prinsip & Layanan UI/UX</h3>
+                        </div>
+                        <div class="pillars-grid">
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                                <div class="pillar-content">
+                                    <h4>User Research & Persona</h4>
+                                    <p>Menggali problem pengguna melalui user interview, journey map, dan usability
+                                        testing.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-sitemap"></i></div>
+                                <div class="pillar-content">
+                                    <h4>Wireframing & IA</h4>
+                                    <p>Menyusun Wireframe low-fidelity & Arsitektur Informasi yang jelas dan
+                                        terstruktur.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-palette"></i></div>
+                                <div class="pillar-content">
+                                    <h4>High-Fidelity UI Design</h4>
+                                    <p>Menciptakan antarmuka yang visualnya memukau dengan sistem warna, tipografi, dan
+                                        layout konsisten.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-item">
+                                <div class="pillar-icon"><i class="fa-solid fa-cubes"></i></div>
+                                <div class="pillar-content">
+                                    <h4>Design System & Components</h4>
+                                    <p>Membangun komponen UI reusable, Figma auto-layout, serta dokumentasi token
+                                        desain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UI/UX PROCESS STEPPER -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title"><i class="fa-solid fa-diagram-project"></i> Workflow Desain</span>
+                    <h2 class="section-title">Alur Kerja UI/UX (Design Process)</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-step">01</div>
+                        <div class="process-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Empathize & Research</h3>
+                        <p>Memahami masalah pengguna, melakukan wawancara, serta menganalisis kompetitor.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-step">02</div>
+                        <div class="process-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h3>Wireframe & Concept</h3>
+                        <p>Membuat konsep sketsa awal, user flow, dan wireframe low-fidelity tanpa distraksi warna.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-step">03</div>
+                        <div class="process-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                        <h3>Hi-Fi UI & Prototyping</h3>
+                        <p>Merealisasikan visual modern, micro-interactions, dan prototipe interaktif di Figma.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-step">04</div>
+                        <div class="process-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                        <h3>Testing & Handoff</h3>
+                        <p>Uji keterpakaian (Usability Test) dengan pengguna nyata dan siapkan asset handoff ke
+                            developer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS & UI/UX EXPERIENCE SECTION -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title" id="projects-subtitle"><i class="fa-solid fa-briefcase"></i> Showcase Karya
+                        & Pengalaman</span>
+                    <h2 class="section-title" id="projects-title">Pengalaman Desain UI/UX</h2>
+                    <p class="section-desc">Kumpulan proyek studi kasus UI/UX, aplikasi mobile, web dashboard, dan
+                        design system yang telah saya rancang.</p>
+                    <div class="title-bar"></div>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls" id="project-filters">
+                    <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> Semua
+                        Karya</button>
+                    <button class="filter-btn" data-filter="mobile"><i class="fa-solid fa-mobile-screen-button"></i>
+                        Mobile App</button>
+                    <button class="filter-btn" data-filter="web"><i class="fa-solid fa-desktop"></i> Web
+                        Dashboard</button>
+                    <button class="filter-btn" data-filter="design-system"><i class="fa-solid fa-swatchbook"></i> Design
+                        System</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-container">
+                    <!-- Project 1: Mobile App -->
+                    <div class="project-card glass-card" data-category="mobile" id="project-1">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project1.png" alt="Aplikasi Sistem Administrasi & Informasi Desa"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://www.figma.com/design/b1jGkXPjNIZOhX9YA7h15p/Gemastik?node-id=2218-50920&t=5YJxSBHTBlSs1e9l-0"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-icon view-details-btn"
+                                    data-project="1">
+                                    <i class="fa-brands fa-figma"></i> Buka Desain di Figma
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header-row">
+                                <div class="project-badge"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App
+                                    UX</div>
+                                <div class="project-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> 2025</span>
+                                    <span><i class="fa-solid fa-user-gear"></i> Lead UI/UX</span>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Aplikasi Sistem Administrasi & Informasi Desa (SAI DESA)</h3>
+                            <p class="project-summary">
+                                Aplikasi Sistem Informasi Desa (SID) dirancang untuk mengelola data kependudukan secara
+                                efisien,
+                                mempercepat layanan administrasi surat-menyurat publik, serta mewujudkan transparansi
+                                informasi terpadu di tingkat desa.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                <span class="tag">Mobile UX</span>
+                                <span class="tag">Prototyping</span>
+                                <span class="tag">Design System</span>
+                            </div>
+                            <a href="https://www.figma.com/design/b1jGkXPjNIZOhX9YA7h15p/Gemastik?node-id=2218-50920&t=5YJxSBHTBlSs1e9l-0"
+                                target="_blank" rel="noopener noreferrer" class="btn-figma-card" data-project="1">
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Web Dashboard -->
+                    <div class="project-card glass-card" data-category="mobile" id="project-2">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project2.png" alt="Nuwou Lampung Tourism Platform UI"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://www.figma.com/design/TsvbfjiqJVkYdBYFb9O1WR/Lomba-UI-UX-UNIPMA?node-id=1-2&t=5YJxSBHTBlSs1e9l-0"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-icon view-details-btn"
+                                    data-project="2">
+                                    <i class="fa-brands fa-figma"></i> Buka Desain di Figma
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header-row">
+                                <div class="project-badge"><i class="fa-solid fa-desktop"></i> Mobile App UX</div>
+                                <div class="project-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> 2026</span>
+                                    <span><i class="fa-solid fa-user-gear"></i> UI Designer</span>
+                                </div>
+                            </div>
+                            <h3 class="project-title">NuwoU Lampung — Platform Kebudayaan & Pariwisata</h3>
+                            <p class="project-summary">
+                                Platform digital interaktif yang dirancang khusus untuk mempromosikan kekayaan
+                                kebudayaan dan pariwisata Provinsi Lampung.
+                                Berfungsi sebagai panduan informasi destinasi, galeri visual adat, dan direktori wisata
+                                unggulan.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                                <span class="tag">Web UI</span>
+                                <span class="tag">Tourism UX</span>
+                                <span class="tag">Design System</span>
+                            </div>
+                            <a href="https://www.figma.com/design/TsvbfjiqJVkYdBYFb9O1WR/Lomba-UI-UX-UNIPMA?node-id=1-2&t=5YJxSBHTBlSs1e9l-0"
+                                target="_blank" rel="noopener noreferrer" class="btn-figma-card" data-project="2">
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Design System -->
+                    <!-- <div class="project-card glass-card" data-category="design-system" id="project-3">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project3.png" alt="Pulse Multi-Platform Design System"
+                                class="project-img">
+                            <div class="project-badge">Design System</div>
+                            <div class="project-overlay">
+                                <a href="https://www.figma.com/design/BwWydjPd8QTRLzIJ9JL3tO/Kelompok-6?node-id=436-3841&t=BmH3xIV9TLswFZXr-0"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-icon view-details-btn"
+                                    data-project="3">
+                                    <i class="fa-brands fa-figma"></i> Detail Case Study
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-year"><i class="fa-regular fa-calendar"></i> 2023 - 2024</span>
+                                <span class="project-role"><i class="fa-solid fa-user-gear"></i> System Architect</span>
+                            </div>
+                            <h3 class="project-title">Pulse Design System & UI Kit</h3>
+                            <p class="project-summary">
+                                Sistem komponen UI terpadu berstandar WCAG 2.1 accessibility. Memuat 120+ varian tombol,
+                                modul form, panduan warna HSL, dan klausa Auto-Layout 5.0.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Figma Tokens</span>
+                                <span class="tag">UI Kit</span>
+                                <span class="tag">Accessibility</span>
+                                <span class="tag">HTML/CSS</span>
+                            </div>
+                            <a href="https://www.figma.com/design/BwWydjPd8QTRLzIJ9JL3tO/Kelompok-6?node-id=436-3841&t=BmH3xIV9TLswFZXr-0"
+                                target="_blank" rel="noopener noreferrer" class="btn-text view-details-btn"
+                                data-project="3">
+                                Lihat Studi Kasus di Figma <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <!-- Project 4: E-Commerce Redesign (Mobile) -->
+                    <!-- <div class="project-card glass-card" data-category="mobile" id="project-4">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project1.png" alt="Modern E-Commerce Checkout Flow"
+                                class="project-img">
+                            <div class="project-badge">UX Redesign</div>
+                            <div class="project-overlay">
+                                <a href="https://www.figma.com/design/BwWydjPd8QTRLzIJ9JL3tO/Kelompok-6?node-id=436-3841&t=BmH3xIV9TLswFZXr-0"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-icon view-details-btn"
+                                    data-project="4">
+                                    <i class="fa-brands fa-figma"></i> Detail Case Study
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-year"><i class="fa-regular fa-calendar"></i> 2023</span>
+                                <span class="project-role"><i class="fa-solid fa-user-gear"></i> UX Researcher</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce One-Tap Checkout Flow</h3>
+                            <p class="project-summary">
+                                Pengalaman penyelesaian transaksi mobile dengan UX yang ditingkatkan. Berhasil memangkas
+                                langkah checkout dari 5 layar menjadi 2 langkah interaktif.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">User Testing</span>
+                                <span class="tag">Wireframing</span>
+                                <span class="tag">Mobile UI</span>
+                            </div>
+                            <a href="https://www.figma.com/design/BwWydjPd8QTRLzIJ9JL3tO/Kelompok-6?node-id=436-3841&t=BmH3xIV9TLswFZXr-0"
+                                target="_blank" rel="noopener noreferrer" class="btn-text view-details-btn"
+                                data-project="4">
+                                Lihat Studi Kasus di Figma <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION (Pendidikan) -->
+        <section class="education-section section-padding" id="education">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title" id="edu-subtitle"><i class="fa-solid fa-graduation-cap"></i> Latar Belakang
+                        Akademis</span>
+                    <h2 class="section-title" id="edu-title">Pendidikan</h2>
+                    <p class="section-desc">Riwayat pendidikan formal dari jenjang sekolah menengah hingga perguruan
+                        tinggi.</p>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline">
+                        <!-- Timeline Item 1: Universitas -->
+                        <div class="timeline-item left" id="edu-item-1">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-university"></i>
+                            </div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2022 - Sekarang
+                                    (Semester 5)</span>
+                                <h3>S1 Sistem Informasi</h3>
+                                <h4 class="institution"><i class="fa-solid fa-building-columns"></i> Universitas
+                                    Teknokrat Indonesia</h4>
+                                <p>
+                                    Berfokus pada pengembangan sistem informasi, analisis kebutuhan sistem, Interaksi
+                                    Manusia dan Komputer (HCI), arsitektur informasi, serta perancangan antarmuka
+                                    pengguna (UI/UX).
+                                </p>
+                                <div class="timeline-highlights">
+                                    <span class="mini-badge"><i class="fa-solid fa-graduation-cap"></i> Mahasiswa Aktif
+                                        Semester 5</span>
+                                    <span class="mini-badge"><i class="fa-solid fa-laptop-code"></i> UI/UX & System
+                                        Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2: SMA -->
+                        <div class="timeline-item right" id="edu-item-2">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2019 - 2022</span>
+                                <h3>Sekolah Menengah Atas (SMA)</h3>
+                                <h4 class="institution"><i class="fa-solid fa-school-flag"></i> SMAN 1 Padang Cermin
+                                </h4>
+                                <p>
+                                    Menyelesaikan pendidikan menengah atas dengan baik, membangun fondasi akademik yang
+                                    kuat, serta aktif dalam kegiatan ekstrakurikuler dan organisasi sekolah.
+                                </p>
+                                <div class="timeline-highlights">
+                                    <span class="mini-badge"><i class="fa-solid fa-user-graduate"></i> Alumni SMAN 1
+                                        Padang Cermin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & TOOLS SECTION (Keahlian Desainer) -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title" id="skills-subtitle"><i class="fa-solid fa-sliders"></i> Kompetensi
+                        Teknis</span>
+                    <h2 class="section-title" id="skills-title">Keahlian & Perangkat Desain</h2>
+                    <p class="section-desc">Peralatan dan metodologi yang saya gunakan untuk menciptakan solusi digital
+                        yang handal.</p>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- UX Research & Strategy -->
+                    <div class="skill-category glass-card" id="skill-cat-1">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h3>UX Research & Strategy</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>User Persona & Journey Map</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Wireframing & Information Architecture</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Usability Testing & Audit</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI & Visual Design -->
+                    <div class="skill-category glass-card" id="skill-cat-2">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <h3>UI & Visual Design</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Figma & Hi-Fi Prototyping</span>
+                                    <span class="skill-percent">98%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 98%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Design System & UI Kits</span>
+                                    <span class="skill-percent">94%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 94%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Responsive Layout & Grid</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend & Prototyping Code -->
+                    <div class="skill-category glass-card" id="skill-cat-3">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3>Frontend UI Code</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>HTML5 & Semantic Markup</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>CSS3 (Flexbox, Grid, Animations)</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>JavaScript UI Logic</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 82%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Tools Badges -->
+                <div class="tools-showcase">
+                    <h3 class="tools-title">Tools & Software Favorit Saya</h3>
+                    <div class="tools-grid">
+                        <div class="tool-card"><i class="fa-brands fa-figma"></i> <span>Figma</span></div>
+                        <div class="tool-card"><i class="fa-solid fa-diagram-project"></i> <span>FigJam</span></div>
+                        <div class="tool-card"><i class="fa-solid fa-terminal"></i> <span>VS Code</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & FOOTER SECTION -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="contact-box glass-card single-card">
+                    <div class="contact-content-single">
+                        <span class="sub-title"><i class="fa-solid fa-comments"></i> Mari Berkolaborasi</span>
+                        <h2 class="contact-heading">Punya Proyek UI/UX atau Ide Produk Digital?</h2>
+                        <p class="contact-desc">
+                            Saya selalu terbuka untuk berdiskusi tentang peluang proyek UI/UX, kolaborasi redesain
+                            aplikasi, maupun tawaran posisi kerja. Hubungi saya secara langsung melalui Email atau
+                            GitHub di bawah ini!
+                        </p>
+
+                        <div class="contact-action-btns">
+                            <a href="mailto:nabila@teknokrat.ac.id" class="btn btn-primary btn-contact-action">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>Kirim Email (nabila@teknokrat.ac.id)</span>
+                            </a>
+                            <a href="https://github.com/nabila-ship-it/Portofolio-Nabila" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary btn-contact-action">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Kunjungi GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo"><span class="logo-text">Nabila<span class="logo-dot">.</span></span></a>
+                <p>© 2026 Nabila. Designed & Crafted with <i class="fa-solid fa-heart heart-icon"></i> using HTML & CSS.
+                </p>
+            </div>
+            <div class="footer-right">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="#projects">Portofolio</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CASE STUDY MODAL DIALOG -->
+    <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-container glass-card">
+            <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
